@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="José Murilo">
+  <meta name="description" content="Localizador de CEP, utilizando JSON.">
+  <title>CEP</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="centralizar">
+  <main class="programa">
+    <header class="cabecalho">
+      <h1>Buscar Endereço</h1>
+    </header>
+
+    <section class="principal">
+      <label for="cep">Digite o CEP:</label>
+      <br>
+      <br>
+      <input type="number" name="cep" id="cep" placeholder="Ex: 12345678" required>
+      <br>
+      <br>
+      <button onclick="localizar()" type="button">Localizar</button>
+
+      <div class="retorno">
+        <p id="resultado">
+
+        </p>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <p>
+        <a href="https://www.linkedin.com/in/jmurilo" target="_blank">&copy; Desenvolvido por JMurilo | 2023</a>
+      </p>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
